@@ -5,11 +5,7 @@ terraform {
       version = "= 3.75.0"
     }
 }
-  
-terraform {
-  backend "azurerm" {}
-}
-  
+}  
 data "azurerm_client_config" "current" {}
   
 resource "azurerm_resource_group" "tamopsrg" {
